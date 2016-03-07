@@ -5,17 +5,12 @@ var radius = Math.min(width, height) / 2;
 
 // Mapping of step names to colors.
 var colors = {
-    'F21001': '#53B4BF',    // Administrative Support Operations
-    'F21003': '#163033',    // School Budgets including Non-District Operated Schools
-    'F31330': '#ADBF00',    // L_ District Operated Schools - Instructional
-    'F41035': '#CFE600',    //    L_ Elementary K-8 Education
-    'F41063': '#DAEA46',    //    L_ Secondary Education
-    'F31350': '#BFD400',    // L_ District Operated Schools - Instructional Support
-    'F31360': '#738000',    // L_ District Operated Schools - Pupil - Family Support
-    'F31620': '#3A4000',    // L_ District Operated Schools - Operational Support
-    'F31361': '#326C73',    // L_ Non-District Operated Schools
-  //'F49012': '#324359',    //    L_All Other Philadelphia Charters
-    'F41038': '#CB1E0A'     // L_ Debt Service
+    28315: '#EE3D2A',    // USD Debt Service
+    10101: '#53B4BF',    // GSD General
+    20115: '#CB1E0A',    // GSD Debt Service
+    35131: '#738000',    // MNPS General Purpose
+    18301: '#3A4000',    // USD General
+    25104: '#7D0C00',    // MNPS Debt Service
 };
 
 var legendLabels = {};

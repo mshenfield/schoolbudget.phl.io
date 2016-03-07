@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>School District of Philadelphia: Budget Data Visualizer</title>
+        <title>Nashville and Davidson County Metro: Budget Data Visualizer</title>
         <link rel="stylesheet" type="text/css" href="css/sunburst.css">
         <meta property="og:title" content="School District of Philadelphia: Budget Data Visualizer"/>
         <meta property="og:url" content="http://sdp-budget.poplar.phl.io/sunburst"/>
@@ -21,13 +21,13 @@
     </head>
     <body>
         <!-- Google Tag Manager -->
-            <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K4G748"
+            <noscript><iframe src="//www.googletagmanager.com/ns.html?id=XXX-XXXXXX"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-K4G748');</script>
+            })(window,document,'script','dataLayer','XXX-XXXXXX');</script>
         <!-- End Google Tag Manager -->
 
         <header id="budget-header" style="visibility: hidden">
@@ -53,20 +53,14 @@
             </div>
             <form>
                 <div>
-                    <span class="year-label">Estimated <span id="yearCurrent"></span> budget:</span>
-                    <label><input type="radio" name="fund" value="current.total" checked> Total    </label>
-                    <label><input type="radio" name="fund" value="current.operating"> Operating    </label>
-                    <label><input type="radio" name="fund" value="current.grant"> Grant    </label>
-                    <label><input type="radio" name="fund" value="current.capital"> Capital    </label>
-                    <label><input type="radio" name="fund" value="current.other"> Other</label>
+                    <span class="year-label"><span id="yearCurrent"></span> budget:</span>
+                    <label><input type="radio" name="fund" value="current.budgeted" checked> Budgeted    </label>
+                    <label><input type="radio" name="fund" value="current.actual"> Actual    </label>
                 </div>
                 <div>
-                    <span class="year-label">Proposed <span id="yearNext"></span> budget:</span>
-                    <label><input type="radio" name="fund" value="next.total"> Total    </label>
-                    <label><input type="radio" name="fund" value="next.operating"> Operating    </label>
-                    <label><input type="radio" name="fund" value="next.grant"> Grant    </label>
-                    <label><input type="radio" name="fund" value="next.capital"> Capital    </label>
-                    <label><input type="radio" name="fund" value="next.other"> Other</label>
+                    <span class="year-label"><span id="yearNext"></span> budget:</span>
+                    <label><input type="radio" name="fund" value="next.budgeted"> Budgeted    </label>
+                    <label><input type="radio" name="fund" value="next.actual"> Actual    </label>
                 </div>
             </form>
         </header>
@@ -81,13 +75,13 @@
                 </div>
             </div>
             <div id="credits">
-                <p>Created by <a href="https://twitter.com/themightychris" target="_blank">Chris Alfano</a> & <a href="https://twitter.com/laurenancona" target="_blank">Lauren Ancona</a> | a <a href="http://codeforphilly.org/projects/sdp_online_budget_visualization" target="_blank">Code for Philly</a> project</p>
+                <p>Created by <a href="https://twitter.com/themightychris" target="_blank">Chris Alfano</a> & <a href="https://twitter.com/laurenancona" target="_blank">Lauren Ancona</a> | a <a href="http://codeforphilly.org/projects/sdp_online_budget_visualization" target="_blank">Code for Philly</a> and <a href="http://www.codefornashville.org.org" target="_blank">Code For Nashville</a> project</p>
             </div>
         </div>
         <div id="sidebar">
 
             <ul id="legend"></ul>
-            <p class="note">Note: Undistributed budgetary adjustments and gap closing reductions are distributed for the purposes of this chart. <br><br> Source: <a href="http://webgui.phila.k12.pa.us/offices/o/open-data-initiative">SDP Open Data Initiative</a></p>
+            <p class="note">Note: Undistributed budgetary adjustments and gap closing reductions are distributed for the purposes of this chart. <br><br> Source: <a href="https://data.nashville.gov/Metro-Government/Metro-Budget-To-Actual-Expenses-FY14-FY15-Official/s2um-p6bp">Nashville Open Data Portal</a></p>
         </div>
         <script src="js/d3.min.js"></script>
         <script src="js/sunburst.js"></script>
